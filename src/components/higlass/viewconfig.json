@@ -56,7 +56,7 @@
           {
             "uid": "line1",
             "tilesetUid": "PjIJKXGbSNCalUZO21e_HQ",
-            "height": 50,
+            "height": 30,
             "width": 843,
             "server": "//higlass.io/api/v1",
             "type": "horizontal-line",
@@ -79,16 +79,16 @@
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
-              "showMousePosition": false,
               "minHeight": 20,
-              "mousePositionColor": "#000000",
+              "showMousePosition": true,
+              "mousePositionColor": "#ff00ff",
               "showTooltip": false
             }
           },
           {
-            "uid": "aTpD5OitQmmB9ljbx_zjBw",
+            "uid": "line2",
             "tilesetUid": "PdAaSdibTLK34hCw7ubqKA",
-            "height": 50,
+            "height": 30,
             "width": 843,
             "server": "//higlass.io/api/v1",
             "type": "horizontal-line",
@@ -111,16 +111,16 @@
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
-              "showMousePosition": false,
+              "showMousePosition": true,
               "minHeight": 20,
-              "mousePositionColor": "#000000",
+              "mousePositionColor": "#ff00ff",
               "showTooltip": false
             }
           },
           {
-            "uid": "line2",
+            "uid": "line3",
             "tilesetUid": "e0DYtZBSTqiMLHoaimsSpg",
-            "height": 50,
+            "height": 30,
             "width": 843,
             "server": "//higlass.io/api/v1",
             "type": "horizontal-line",
@@ -143,16 +143,16 @@
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
-              "showMousePosition": false,
+              "showMousePosition": true,
               "minHeight": 20,
-              "mousePositionColor": "#000000",
+              "mousePositionColor": "#ff00ff",
               "showTooltip": false
             }
           },
           {
-            "uid": "Fbd3ugOZR_qnmogyxBtAcQ",
+            "uid": "line4",
             "tilesetUid": "cE0nGyd0Q_yVYSyBUe89Ww",
-            "height": 50,
+            "height": 30,
             "width": 843,
             "server": "//higlass.io/api/v1",
             "type": "horizontal-line",
@@ -175,9 +175,9 @@
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
-              "showMousePosition": false,
+              "showMousePosition": true,
               "minHeight": 20,
-              "mousePositionColor": "#000000",
+              "mousePositionColor": "#ff00ff",
               "showTooltip": false
             }
           }
@@ -199,7 +199,7 @@
       }
     }
   ],
-  "editable": true,
+  "editable": false,
   "exportViewUrl": "/api/v1/viewconfs",
   "zoomLocks": {
     "locksByViewUid": {},
