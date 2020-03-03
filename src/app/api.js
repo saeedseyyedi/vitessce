@@ -15,6 +15,7 @@ function makeLayerNameToConfig(datasetPrefix) {
 
 const linnarssonLayerNames = [
   'cells',
+  'clusters',
   'factors',
   'genes',
   'images',
@@ -170,7 +171,7 @@ const configs = {
         x: 10, y: 0, w: 2, h: 2 },
       { component: 'genes',
         x: 10, y: 2, w: 2, h: 2 },
-      { component: 'higlass',
+      { component: 'heatmap',
         x: 2, y: 4, w: 10, h: 2 },
     ],
   },
@@ -383,6 +384,42 @@ const configs = {
         x: 10, y: 0, w: 2, h: 2 },
     ],
   },
+  "atac-10x-pbmc-2019": {
+    name: "10x Genomics scATAC of 5k PBMCs",
+    description: "5k Peripheral blood mononuclear cells (PBMCs) from a healthy donor",
+    layers: [
+      {
+        name: "cells",
+        type: "CELLS",
+        url: "http://localhost:9090/data/processed/pbmc_10x.cells.json",
+        requestInit: {
+        },
+      },
+      {
+        name: "factors",
+        type: "FACTORS",
+        url: "http://localhost:9090/data/processed/pbmc_10x.factors.json",
+        requestInit: {
+        },
+      }
+    ],
+    public: false,
+    staticLayout: [
+      { component: 'scatterplot',
+        props: {
+          mapping: 't-SNE',
+          view: {
+            zoom: 3,
+            target: [0, 0, 0],
+          },
+        },
+        x: 0, y: 0, w: 8, h: 6 },
+      { component: 'factors',
+        x: 8, y: 0, w: 4, h: 6 },
+      { component: 'higlass',
+        x: 0, y: 6, w: 12, h: 3 },
+    ]
+  }
 };
 /* eslint-enable */
 
