@@ -391,16 +391,7 @@ const configs = {
       {
         name: "cells",
         type: "CELLS",
-        url: "http://localhost:9090/data/processed/pbmc_10x.cells.json",
-        requestInit: {
-        },
-      },
-      {
-        name: "factors",
-        type: "FACTORS",
-        url: "http://localhost:9090/data/processed/pbmc_10x.factors.json",
-        requestInit: {
-        },
+        url: "http://localhost:9090/data/processed/pbmc_10x.cells.json"
       }
     ],
     public: false,
@@ -413,11 +404,16 @@ const configs = {
             target: [0, 0, 0],
           },
         },
-        x: 0, y: 0, w: 8, h: 6 },
-      { component: 'factors',
-        x: 8, y: 0, w: 4, h: 6 },
+        x: 0, y: 0, w: 8, h: 5 },
+      { component: 'cellSets',
+        props: {
+          datasetId: 'atac-10x-pbmc-2019'
+        },
+        x: 8, y: 0, w: 4, h: 4 },
+      { component: 'status',
+        x: 8, y: 4, w: 4, h: 1 },
       { component: 'higlass',
-        x: 0, y: 6, w: 12, h: 3 },
+        x: 0, y: 5, w: 12, h: 4 },
     ]
   }
 };

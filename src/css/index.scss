@@ -53,8 +53,8 @@ html {
         display: block;
         text-align: left;
         box-sizing: border-box;
-        
         .higlass {
+          border-radius: 0.25rem;
           .react-grid-layout {
             background-color: transparent !important;
           }

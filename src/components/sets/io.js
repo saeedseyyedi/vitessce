@@ -102,9 +102,10 @@ export function handleImportJSON(props, result) {
     onError(`Import validation failed: ${failureReason}`);
   } else if (importData.datasetId !== datasetId) {
     onError('The imported datasetId does not match the current datasetId.');
-  } else if (importData.version !== version) {
+  } /*else if (importData.version !== version) {
+    console.log(importData.version, version);
     onError('The imported schema version is not compatible with the current schema version.');
-  } else if (importData.setsType !== setsType) {
+  }*/ else if (importData.setsType !== setsType) {
     onError('The imported setsType does not match the current setsType.');
   } else {
     onError(false); // Clear any previous import error.
