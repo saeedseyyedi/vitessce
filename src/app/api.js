@@ -430,29 +430,29 @@ const configs = {
         props: {
           mapping: 't-SNE',
           view: {
-            zoom: 3,
+            zoom: 2.5,
             target: [0, 0, 0],
           },
         },
-        x: 0, y: 0, w: 4, h: 4 },
+        x: 2, y: 0, w: 4, h: 4 },
       { component: 'scatterplot',
         props: {
           mapping: 't-SNE from LSA',
           view: {
-            zoom: 3,
+            zoom: 1.8,
             target: [0, 0, 0],
           },
         },
-        x: 4, y: 0, w: 4, h: 4 },
+        x: 2, y: 4, w: 4, h: 4 },
       { component: 'cellSets',
         props: {
           datasetId: 'atac-10x-pbmc-2019'
         },
-        x: 8, y: 0, w: 2, h: 7 },
+        x: 0, y: 0, w: 2, h: 6 },
       { component: 'status',
-        x: 8, y: 7, w: 2, h: 2 },
+        x: 0, y: 6, w: 2, h: 2 },
       { component: 'higlass',
-        x: 0, y: 4, w: 8, h: 5 },
+        x: 6, y: 0, w: 4, h: 8 },
     ]
   },
 };

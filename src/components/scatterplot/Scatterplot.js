@@ -61,7 +61,7 @@ export default class Scatterplot extends AbstractSelectableComponent {
               : true // If nothing is selected, everything is selected.
           ),
           // No radiusMin, so texture remains open even zooming out.
-          radiusMaxPixels: 1,
+          radiusMaxPixels: 1.5,
           getPosition: (cellEntry) => {
             const { mappings } = cellEntry[1];
             if (!(mapping in mappings)) {

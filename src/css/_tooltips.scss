@@ -4,7 +4,11 @@
       z-index: 5;
       position: absolute;
       pointer-events: none;
-      background-color: white;
+      @if $theme == dark {
+        background-color: #FFFFFF;
+      } @else if $theme == light {
+        background-color: #333333;
+      }
   }
 
   .cell-emphasis-vertical {
@@ -33,8 +37,13 @@
       animation-fill-mode: forwards;
 
       table > tbody > tr > th, table > tbody > tr > td {
-          font-size: 80%;
-          opacity: 0.8;
+        font-size: 80%;
+        opacity: 0.8;
+        outline: 0;
+        padding: 0 2px;
+      }
+      table {
+        border-collapse: collapse;
       }
   }
 

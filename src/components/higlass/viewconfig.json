@@ -11,10 +11,6 @@
         0,
         3100000000.0000005
       ],
-      "initialYDomain": [
-        565344368.1209397,
-        1906631923.86548
-      ],
       "tracks": {
         "top": [
           {
@@ -24,12 +20,12 @@
             "server": "//higlass.io/api/v1",
             "uid": "horizontal-gene-annotations-track",
             "options": {
-              "labelPosition": "outerTop",
               "name": "Gene Annotations (hg19)",
+              "labelBackgroundColor": "#eeeeee",
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
-              "plusStrandColor": "#fdff54",
-              "minusStrandColor": "#68bf30",
+              "mousePositionColor": "#000000",
+              "plusStrandColor": "blue",
+              "minusStrandColor": "red",
               "labelColor": "black",
               "trackBorderWidth": 0,
               "trackBorderColor": "black"
@@ -42,7 +38,7 @@
             "uid": "horizontal-chromosome-labels-track",
             "options": {
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff"
+              "mousePositionColor": "#000000"
             }
           },
           {
@@ -62,19 +58,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 1"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           },
           {
             "server": "http://localhost:9000/api/v1",
@@ -93,19 +89,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 2"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           },
           {
             "server": "http://localhost:9000/api/v1",
@@ -124,19 +120,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 3"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           },
           {
             "server": "http://localhost:9000/api/v1",
@@ -155,19 +151,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 4"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           },
           {
             "server": "http://localhost:9000/api/v1",
@@ -186,19 +182,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 5"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           },
           {
             "server": "http://localhost:9000/api/v1",
@@ -217,19 +213,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 6"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           },
           {
             "server": "http://localhost:9000/api/v1",
@@ -248,19 +244,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 7"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           },
           {
             "server": "http://localhost:9000/api/v1",
@@ -279,19 +275,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 8"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           },
           {
             "server": "http://localhost:9000/api/v1",
@@ -310,19 +306,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 9"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           },
           {
             "server": "http://localhost:9000/api/v1",
@@ -341,19 +337,19 @@
               "labelShowAssembly": false,
               "axisLabelFormatting": "scientific",
               "axisPositionHorizontal": "right",
-              "barFillColor": "turquoise",
+              "barFillColor": "dimgray",
               "valueScaling": "linear",
               "trackBorderWidth": 0,
               "trackBorderColor": "black",
               "labelTextOpacity": 0.4,
               "barOpacity": 1,
               "showMousePosition": true,
-              "mousePositionColor": "#ff00ff",
+              "mousePositionColor": "#000000",
               "showTooltip": false,
               "name": "Cluster 10"
             },
             "width": 20,
-            "height": 30
+            "height": 45
           }
         ],
         "left": [],
@@ -361,12 +357,13 @@
           {
             "uid": "c1",
             "type": "combined",
-            "height": 300,
+            "height": 700,
             "contents": [
               {
                 "server": "//higlass.io/api/v1",
                 "tilesetUid": "CQMd6V_cRw6iCI_-Unl3PQ",
                 "type": "heatmap",
+                "height": 700,
                 "options": {
                   "maxZoom": null,
                   "labelPosition": "bottomRight",
@@ -385,13 +382,11 @@
                     "black"
                   ],
                   "colorbarBackgroundColor": "#ffffff",
-                  "minWidth": 100,
-                  "minHeight": 200,
                   "colorbarPosition": "topRight",
                   "trackBorderWidth": 0,
                   "trackBorderColor": "black",
                   "heatmapValueScaling": "log",
-                  "showMousePosition": false,
+                  "showMousePosition": true,
                   "mousePositionColor": "#000000",
                   "showTooltip": false,
                   "extent": "full",
