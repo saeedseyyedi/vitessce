@@ -424,6 +424,7 @@ const configs = {
       }
     ],
     public: false,
+    theme: 'light',
     staticLayout: [
       { component: 'scatterplot',
         props: {

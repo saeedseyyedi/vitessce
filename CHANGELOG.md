@@ -2,6 +2,7 @@
 
 ## 0.0.25 - In progress
 ### Added
+- Added a theme option in the dataset config objects, with support for "light" and "dark".
 - HiGlass integration
 - HiGlass integration demo with 10x genomics scATAC-seq PBMC data
 

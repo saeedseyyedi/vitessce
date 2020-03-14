@@ -7,7 +7,7 @@
     border: 0;
 }
 
-@mixin sets-manager {
+@mixin sets-manager($theme) {
 
     /* The zoom mixin contains styles for the popover transition animations. */
     @include zoom;
@@ -56,9 +56,13 @@
                 }
                 .ant-tree-title {
                     border: 0;
-                    background: transparent;
-                    color: $color-white;
                     cursor: pointer;
+
+                    @if $theme == light {
+                        color: #333333;
+                    } @else if $theme == dark {
+                        color: #FFFFFF;
+                    }
                 }
                 .ant-tree-title-input {
                     @include input-minimal-sm;
@@ -68,6 +72,12 @@
                     @include input-minimal-sm;
                     cursor: pointer;
                     margin-left: 4px;
+
+                    @if $theme == light {
+                        background-color: #FFFFFF;
+                    } @else if $theme == dark {
+                        background-color: transparent;
+                    }
                 }
                 .ant-tree-node-menu-trigger-container {
                     transition: opacity 0.25s;
@@ -87,12 +97,17 @@
                 z-index: 1;
                 padding-top: 1.25rem;
                 margin-top: -1.25rem;
-                border-bottom: 1px solid $color-gray-mid;
-                background-color: #222;
                 /* Need calculation, since with fixed position,
                     does not take padding into account. */
                 width: calc(100% - 3.75rem);
                 position: fixed;
+                border-bottom: 1px solid #555555;
+                
+                @if $theme == light {
+                    background-color: #F1F1F1;
+                } @else if $theme == dark {
+                    background-color: #222222;
+                }
             }
             .ant-tabs-content {
                 margin-top: 40px;
@@ -105,20 +120,32 @@
                     height: 28px;
                 }
                 .ant-tabs-tab {
-                    background-color: $color-gray-mid;
-                    border: 1px solid $color-gray-mid;
                     height: 28px;
                     line-height: 26px;
                     padding: 0 6px;
-                    &.ant-tabs-tab-active {
-                        background-color: $color-gray-dark;
-                        border: 1px solid $color-gray-mid;
+                    border: 1px solid #555555;
+
+                    @if $theme == light {
+                        background-color: #8A8A8A;
+                    } @else if $theme == dark {
+                        background-color: #555555;
                     }
 
                     .ant-tabs-close-x {
-                        color: white;
                         margin-left: 5px;
                         margin-right: -2px;
+                        color: #FFFFFF;
+                    }
+
+                    &.ant-tabs-tab-active {
+                        border: 1px solid #555555;
+
+                        @if $theme == light {
+                            background-color: #8A8A8A;
+                            color: #000000;
+                        } @else if $theme == dark {
+                            background-color: #333333;
+                        }
                     }
 
                     &:first-child .ant-tabs-close-x {
@@ -147,8 +174,13 @@
                 padding: 3px 2px 0 2px;
                 margin-left: 10px;
                 &:hover {
-                    background-color: #444;
                     transition: background-color 0.5s;
+
+                    @if $theme == light {
+                        background-color: #C0C0C0;
+                    } @else if $theme == dark {
+                        background-color: #444444;
+                    }
                 }
             }
         }

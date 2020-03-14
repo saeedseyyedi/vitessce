@@ -2,10 +2,11 @@ import React from 'react';
 
 import { LIGHT_CARD } from '../components/classNames';
 import version from '../version.json';
+import { getPreferredTheme } from '../components/utils';
 
 function DatasetList(props) {
   const { configs } = props;
-  const aClassName = 'list-group-item list-group-item-action flex-column align-items-start bg-black';
+  const aClassName = 'list-group-item list-group-item-action flex-column align-items-start bg-secondary';
   const links = configs.map(
     ({ id, name, description }) => (
       <div className={aClassName} key={id}>
@@ -43,7 +44,7 @@ function Form(props) {
       <br />
       <div>Or specify URL of configuration:</div>
       <div className="input-group mb-3">
-        <input type="text" name="url" className="form-control" style={{ background: 'lightgrey' }} />
+        <input type="text" name="url" className="form-control" />
         <div className="input-group-append">
           <button className="btn btn-outline-secondary" type="submit">Load</button>
         </div>
@@ -92,8 +93,9 @@ function Info() {
 
 export default function Welcome(props) {
   const { configs } = props;
+  const theme = getPreferredTheme();
   return (
-    <div className="vitessce-container">
+    <div className={`vitessce-container vitessce-theme-${theme}`}>
       <div className="react-grid-layout container-fluid" style={{ height: '100vh' }}>
         <div className="row">
           <div className="welcome-col-left">

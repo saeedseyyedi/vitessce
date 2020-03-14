@@ -9,14 +9,24 @@
 @import 'sets-manager';
 @import 'popover';
 
+@mixin vitessce-themable($theme) {
+  @include app($theme);
+  @include controls($theme);
+  @include error($theme);
+  @include tooltips($theme);
+  @include sets-manager($theme);
+}
+
 .vitessce-container {
   @include bootstrap-minimal;
-  @include app;
-  @include controls;
-  @include error;
-  @include tooltips;
-  @include sets-manager;
   position: relative; // So please-wait can be positioned absolutely.
+  
+  &.vitessce-theme-dark {
+    @include vitessce-themable("dark");
+  }
+  &.vitessce-theme-light {
+    @include vitessce-themable("light");
+  }
 }
 
 .vitessce-popover {

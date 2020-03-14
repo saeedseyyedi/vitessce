@@ -18,8 +18,7 @@ const hgOptionsBase = {
     pixelPreciseMarginPadding: true,
     containerPaddingX: 0,
     containerPaddingY: 0,
-    sizeMode: 'default',
-    theme: 'dark'
+    sizeMode: 'default'
 };
 
 export default function HiGlassSubscriber(props) {
@@ -70,6 +69,7 @@ export default function HiGlassSubscriber(props) {
     const hgComponent = useMemo(() => {
         const hgOptions = {
             ...hgOptionsBase,
+            theme: 'light',
             onViewConfLoaded: onReady
         };
 
