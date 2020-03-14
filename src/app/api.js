@@ -433,16 +433,25 @@ const configs = {
             target: [0, 0, 0],
           },
         },
-        x: 0, y: 0, w: 8, h: 5 },
+        x: 0, y: 0, w: 4, h: 4 },
+      { component: 'scatterplot',
+        props: {
+          mapping: 't-SNE from LSA',
+          view: {
+            zoom: 3,
+            target: [0, 0, 0],
+          },
+        },
+        x: 4, y: 0, w: 4, h: 4 },
       { component: 'cellSets',
         props: {
           datasetId: 'atac-10x-pbmc-2019'
         },
-        x: 8, y: 0, w: 4, h: 4 },
+        x: 8, y: 0, w: 2, h: 7 },
       { component: 'status',
-        x: 8, y: 4, w: 4, h: 1 },
+        x: 8, y: 7, w: 2, h: 2 },
       { component: 'higlass',
-        x: 0, y: 5, w: 12, h: 4 },
+        x: 0, y: 4, w: 8, h: 5 },
     ]
   },
 };
