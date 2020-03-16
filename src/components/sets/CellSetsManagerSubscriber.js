@@ -69,7 +69,7 @@ export default class CellSetsManagerSubscriber extends React.Component {
     const { datasetId, removeGridComponent } = this.props;
     return (
       <TitleInfo
-        title="Cell Sets"
+        title="Sets"
         isScroll
         removeGridComponent={removeGridComponent}
       >

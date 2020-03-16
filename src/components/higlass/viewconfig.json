@@ -20,13 +20,13 @@
             "server": "//higlass.io/api/v1",
             "uid": "horizontal-gene-annotations-track",
             "options": {
-              "name": "Gene Annotations (hg19)",
               "labelBackgroundColor": "#eeeeee",
+              "labelTextOpacity": 0,
               "showMousePosition": true,
               "mousePositionColor": "#000000",
-              "plusStrandColor": "blue",
-              "minusStrandColor": "red",
-              "labelColor": "black",
+              "plusStrandColor": "black",
+              "minusStrandColor": "black",
+              "labelPosition": "hidden",
               "trackBorderWidth": 0,
               "trackBorderColor": "black"
             }
